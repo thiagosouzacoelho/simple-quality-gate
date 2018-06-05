@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Simple Quality Gate',
+                   'Implementation-Version': 1,
+                   'Main-Class': 'br.com.sqg.Starter'
+    }
+}
